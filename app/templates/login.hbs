@@ -1,0 +1,15 @@
+
+<h1> list of Fruits</h1>
+
+<form method="POST" action="/add">
+    <input class="" >
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+<ul>
+    {{#each @model as |scientist|}}
+    <li>{{scientist}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
